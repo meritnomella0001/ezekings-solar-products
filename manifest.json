@@ -1,0 +1,25 @@
+{ 
+  "id": "com.igboline.app",
+  "name": "igboline",
+  "short_name": "igboline marketplace",
+  "description": "All products marketplace .",
+  "start_url": "",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#004085",
+  "background_color": "#ffffff",
+  "theme_color": "#004085",
+  "icons": [
+    {
+      "src": "/",
+      "sizes": "510x510",
+      "type": "image/png"
+    },
+    {
+      "src": "/",
+      "sizes": "960x960",
+      "type": "image/png"
+    }
+  ]
+}
