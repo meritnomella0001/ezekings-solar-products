@@ -831,9 +831,57 @@ window.addEventListener('appinstalled', () => {
     document.getElementById('browser-warning').style.display = 'block';
   }
 </script>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!-- Floating Gold Button -->
+<button id="shareBtn" class="floating-share-btn">
+    <span class="material-icons">share</span>
+</button>
+
+<!-- Overlay -->
+<div class="overlay-bg" id="overlay"></div>
+
+<!-- Slide-out Share Panel -->
+<div class="share-slide-panel" id="sharePanel">
+    <h3 class="panel-title">Share With Friends</h3>
+    
+    <div class="share-options-grid">
+        <button class="share-option" id="shareFacebook">
+            <span class="material-icons">facebook</span>
+            <p>Facebook</p>
+        </button>
+        
+        <button class="share-option" id="shareWhatsApp">
+            <span class="material-icons">chat</span>
+            <p>WhatsApp</p>
+        </button>
+        
+        <button class="share-option" id="shareTikTok">
+            <span class="material-icons">music_note</span>
+            <p>TikTok</p>
+        </button>
+        
+        <button class="share-option" id="shareTwitter">
+            <span class="material-icons">public</span>
+            <p>X</p>
+        </button>
+        
+        <button class="share-option" id="shareLinkedIn">
+            <span class="material-icons">work</span>
+            <p>LinkedIn</p>
+        </button>
+        
+        <button class="share-option" id="shareEmail">
+            <span class="material-icons">mail</span>
+            <p>Email</p>
+        </button>
+    </div>
+</div>
 </body>
 
 </html>
+
 
 
 
