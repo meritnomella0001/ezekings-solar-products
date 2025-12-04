@@ -2,7 +2,7 @@
   "id": "com.igboline.app",
   "name": "igboline",
   "short_name": "igboline marketplace",
-  "description": "All Electrical Products marketplace .",
+  "description": "All Electrical Products marketplace.",
   "start_url": "https://igbolineelectricals.onrender.com",
   "display": "standalone",
   "orientation": "portrait",
@@ -13,12 +13,12 @@
   "icons": [
     {
       "src": "/igboline.png",
-      "sizes": "960x960",
+      "sizes": "192x192",
       "type": "image/png"
     },
     {
       "src": "/igboline.png",
-      "sizes": "960x960",
+      "sizes": "192x192",
       "type": "image/png"
     }
   ]
