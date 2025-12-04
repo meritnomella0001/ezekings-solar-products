@@ -846,6 +846,7 @@ window.addEventListener('appinstalled', () => {
 
 <!-- Slide-out Share Panel -->
 <div class="share-slide-panel" id="sharePanel">
+  <button class="close-panel-btn" id="closePanelBtn">&times;</button>
     <h3 class="panel-title">Share With Friends</h3>
     
     <div class="share-options-grid">
@@ -885,9 +886,83 @@ window.addEventListener('appinstalled', () => {
         </button>
     </div>
 </div>
+  <script>
+// Share Data
+const shareMessage = `Welcome to IGBOLINE ELECTRICALS marketplace 👨‍🔧👩‍🔧🧑‍🔧🔌⚡🛋️✨\nYou can order any electrical /electronics appliances from the link below 👇\nhttps://paschal-interior-furnitures.onrender.com\nStart shopping now!`;
+const url = "https://igbolineelectricals.onrender.com";
+
+// Elements
+const shareBtn = document.getElementById("shareBtn");
+const panel    = document.getElementById("sharePanel");
+const overlay  = document.getElementById("overlay");
+
+// Open Panel
+shareBtn.addEventListener("click", () => {
+    panel.classList.add("open");
+    overlay.classList.add("active");
+    document.body.style.overflow = "hidden";
+});
+
+// Close Panel
+overlay.addEventListener("click", () => {
+    panel.classList.remove("open");
+    overlay.classList.remove("active");
+    document.body.style.overflow = "auto";
+});
+
+// Sharing Functions
+document.getElementById("shareFacebook").onclick = () => {
+    window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`, "_blank");
+};
+
+document.getElementById("shareWhatsApp").onclick = () => {
+    window.open(`https://wa.me/?text=${encodeURIComponent(shareMessage)}`, "_blank");
+};
+
+document.getElementById("shareTwitter").onclick = () => {
+    window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(shareMessage)}`, "_blank");
+};
+
+document.getElementById("shareTikTok").onclick = async () => {
+    await navigator.clipboard.writeText(shareMessage);
+    alert("Message copied! Paste it in TikTok.");
+};
+
+document.getElementById("shareLinkedIn").onclick = () => {
+    window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`, "_blank");
+};
+
+document.getElementById("shareEmail").onclick = () => {
+    const subject = "Check out Paschal Furniture!";
+    const body = `${shareMessage.replace(/\n/g, "%0A")}`;
+    window.open(`mailto:?subject=${encodeURIComponent(subject)}&body=${body}`);
+};
+    // Close panel when X is clicked
+document.getElementById("closePanelBtn").addEventListener("click", () => {
+    panel.classList.remove("open");
+    overlay.classList.remove("active");
+    document.body.style.overflow = "auto";
+});
+    // Instagram Share (opens app or web + copies message)
+document.getElementById("shareInstagram").onclick = async () => {
+    await navigator.clipboard.writeText(shareMessage);
+    alert("Message copied! 📸 Now paste it in Instagram Stories or DM.");
+    
+    // Optional: Try to open Instagram app (mobile only)
+    if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) {
+        window.location.href = "instagram://library";
+        setTimeout(() => {
+            window.open("https://www.instagram.com", "_blank");
+        }, 1000);
+    } else {
+        window.open("https://www.instagram.com", "_blank");
+    }
+};
+  </script>
 </body>
 
 </html>
+
 
 
 
