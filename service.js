@@ -1,4 +1,4 @@
-const CACHE_NAME = 'igbolinemarketplace-cache-v1';
+const CACHE_NAME = 'igbolineelecticals-cache-v1';
 const urlsToCache = [
   '/',                  // Main page
   '/',
