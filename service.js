@@ -1,8 +1,8 @@
 const CACHE_NAME = 'igbolineelecticals-cache-v1';
 const urlsToCache = [
   '/',                  // Main page
-  '/',
-  '/'
+  '/igboline.png',
+  '/igboline.png'
 ];
 
 // Install – cache essential files
