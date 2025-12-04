@@ -886,6 +886,14 @@ window.addEventListener('appinstalled', () => {
         </button>
     </div>
 </div>
+  <div class="top-controls">
+  <select id="stateSelect" class="form-select form-select-sm" style="min-width:120px">
+    <option value="" selected>More Info ▼</option>
+    <option value="about">Know More (About Us)</option>
+    <option value="howto">How to Order</option>
+  </select>
+  <button id="menuBtn" class="btn btn-sm btn-outline-secondary"><i class="bi bi-list"></i></button>
+  </div>
   <script>
 // Share Data
 const shareMessage = `Welcome to IGBOLINE ELECTRICALS marketplace 👨‍🔧👩‍🔧🧑‍🔧🔌⚡🛋️✨\nYou can order any electrical /electronics appliances from the link below 👇\nhttps://paschal-interior-furnitures.onrender.com\nStart shopping now!`;
@@ -959,9 +967,11 @@ document.getElementById("shareInstagram").onclick = async () => {
     }
 };
   </script>
+  
 </body>
 
 </html>
+
 
 
 
