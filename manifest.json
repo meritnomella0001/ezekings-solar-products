@@ -3,7 +3,7 @@
   "name": "igboline",
   "short_name": "igboline marketplace",
   "description": "All Electrical Products marketplace .",
-  "start_url": "",
+  "start_url": "https://igbolineelectricals.onrender.com",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",
