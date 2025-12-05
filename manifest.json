@@ -1,7 +1,7 @@
 { 
   "id": "com.igboline.app",
   "name": "igboline",
-  "short_name": "igboline marketplace",
+  "short_name": "igboline electricals marketplace",
   "description": "All Electrical Products marketplace.",
   "start_url": "https://igbolineelectricals.onrender.com",
   "display": "standalone",
